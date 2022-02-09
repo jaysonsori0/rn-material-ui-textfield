@@ -39,6 +39,7 @@ export default class TextField extends PureComponent {
     fontSize: 16,
     labelFontSize: 12,
 
+    labelColor: '',
     tintColor: 'rgb(0, 145, 234)',
     textColor: 'rgba(0, 0, 0, .87)',
     baseColor: 'rgba(0, 0, 0, .38)',
@@ -78,6 +79,7 @@ export default class TextField extends PureComponent {
     titleTextStyle: Text.propTypes.style,
     affixTextStyle: Text.propTypes.style,
 
+    labelColor: PropTypes.string,
     tintColor: PropTypes.string,
     textColor: PropTypes.string,
     baseColor: PropTypes.string,
@@ -209,6 +211,10 @@ export default class TextField extends PureComponent {
 
     if (labelState ^ prevLabelState) {
       this.startLabelAnimation()
+    }
+
+    if (this.props.value !== prevProps.value) {
+      this.setState({ text: this.props.value });
     }
   }
 
@@ -585,6 +591,7 @@ export default class TextField extends PureComponent {
       <TextInput
         selectionColor={tintColor}
         {...props}
+        underlineColorAndroid='transparent'
         style={[styles.input, inputStyle, inputStyleOverrides]}
         editable={!disabled && editable}
         onChange={this.onChange}
@@ -608,6 +615,7 @@ export default class TextField extends PureComponent {
       lineWidth,
       activeLineWidth,
       disabledLineWidth,
+      labelColor,
       tintColor,
       baseColor,
       errorColor,
@@ -645,6 +653,7 @@ export default class TextField extends PureComponent {
       disabled,
       restricted,
       baseColor,
+      labelColor,
       tintColor,
       errorColor,
 
