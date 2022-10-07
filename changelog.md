@@ -1,3 +1,29 @@
+## [1.0.7](https://github.com/gabrieldonadel/rn-material-ui-textfield/compare/v1.0.6...v1.0.7) (2022-08-14)
+
+
+### Bug Fixes
+
+* Proptypes error on react-native 0.69 ([8b88da6](https://github.com/gabrieldonadel/rn-material-ui-textfield/commit/8b88da60cc1c027c56c0375be7c31e30b848baf5))
+
+
+### Features
+
+* Add typescript support to the project ([6b08613](https://github.com/gabrieldonadel/rn-material-ui-textfield/commit/6b0861358a7ed7b18a4dba8667b38ceba7c5147b))
+
+
+
+## [1.0.6](https://github.com/gabrieldonadel/rn-material-ui-textfield/compare/v1.0.4...v1.0.6) (2022-03-04)
+
+### Bug Fixes
+
+- Fix line-height glitch on TextField's label([681265f](https://github.com/gabrieldonadel/rn-material-ui-textfield/commit/681265f))
+
+## [1.0.5](https://github.com/gabrieldonadel/rn-material-ui-textfield/compare/v1.0.4...v1.0.5) (2021-07-18)
+
+### Features
+
+- Allow pressing on accessories if input not disabled ([0cc7053](https://github.com/gabrieldonadel/rn-material-ui-textfield/commit/0cc7053605059b36af78c3fda555d9bd3f8e81be))
+
 ## [1.0.4](https://github.com/gabrieldonadel/rn-material-ui-textfield/compare/v1.0.3...v1.0.4) (2021-04-22)
 
 ### Features
